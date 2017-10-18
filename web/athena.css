@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-size: 1em;
+	text-align: center;
+}
+@media only screen and (max-width: 800px) {
+	.grid{
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"header"
+			"metadata"
+			"content"
+			"footer";
+	}
+}
+@media only screen and (min-width: 801px) {
+	.grid{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+			" . header . "
+			" content content metadata"
+			"footer footer footer";
+	}
+}
+h1{
+	grid-area: header;
+}
+footer{
+	grid-area: footer;
+}
+.sso{
+	grid-area: metadata;
+}
+.signon{
+	grid-area: metadata;
+}
