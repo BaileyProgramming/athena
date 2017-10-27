@@ -36,4 +36,33 @@ footer{
 }
 .signon{
 	grid-area: metadata;
+	text-align: center;
+	
+}
+.ssoimg{
+	display: block;
+	
+}
+.sso-g{
+	display: block;
+	margin: 0 auto;
+	/* [disabled]vertical-align: middle; */
+	text-align: center;
+	border-radius: 5px;
+	background: #4285F4;
+	width: 15em;
+}
+.sso-g-img{
+	background: url('google_signin_buttons/web/vector/btn_google_light_normal_ios.svg') transparent 5px 50% no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 42px;
+	height: 25px;
+	padding-left: 0.5em;
+	padding-right: 1em;
+}
+.sso-g-label{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 1em;
 }
